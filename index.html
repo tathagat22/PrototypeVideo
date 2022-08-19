@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>ProtoType Page</title>
+  </head>
+  <body>
+    <div id="video">
+      <video class="video-player" id="user-1" autoplay playinline></video>
+      <video class="video-player" id="user-2" autoplay playinline></video>
+    </div>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/7CbQxyftNo4?autoplay=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div id="controls">
+      <div class="control-container" id="camera-btn">
+        <img src="icons/camera.png" />
+      </div>
+      <div class="control-container" id="mic-btn">
+        <img src="icons/mic.png" />
+      </div>
+
+      <a href="lobby.html">
+        <div class="control-container" id="leave-btn">
+          <img id="editing" src="icons/phone.png" />
+        </div>
+      </a>
+    </div>
+  </body>
+  <script src="agora-rtm-sdk-1.5.0.js"></script>
+  <script src="main.js"></script>
+</html>
